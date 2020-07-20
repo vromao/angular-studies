@@ -1,4 +1,4 @@
-# MyFirstApp - Angular 10
+# Studying - Angular 10
 App to save, study and check code from a course from Udemy that I'm doing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
