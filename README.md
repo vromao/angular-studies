@@ -3,6 +3,8 @@ App to save, study and check code from a course from Udemy that I'm doing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
+**OBS: The main focus of this repository is to serve as reference material for me. The focus is not to have beautiful code here, but code to study!**
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
