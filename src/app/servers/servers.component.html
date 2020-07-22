@@ -19,5 +19,4 @@
 <!-- Curiosite: innerText is a property that allows change the text inside a HTML tag. Beside of that this shouldn't be used and isn't recommended. If you want change texts use string interpolation. If want change a property (dinamicaly) of html tag, directive or component, use property binding -->
 <p [innerText]="allowNewServer"></p>
 <!--  -->
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
