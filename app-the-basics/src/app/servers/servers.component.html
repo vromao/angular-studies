@@ -1,0 +1,22 @@
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)" /> -->
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<!-- <p>{{ serverName }}</p> -->
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated; else noServer">Server was created, server name is {{ serverName }}</p>
+<ng-template #noServer>
+  <p>No server was created!</p>
+</ng-template>
+
+<!-- Curiosite: innerText is a property that allows change the text inside a HTML tag. Beside of that this shouldn't be used and isn't recommended. If you want change texts use string interpolation. If want change a property (dinamicaly) of html tag, directive or component, use property binding -->
+<p [innerText]="allowNewServer"></p>
+<!--  -->
+<app-server *ngFor="let server of servers"></app-server>
